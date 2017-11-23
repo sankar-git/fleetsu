@@ -12,7 +12,7 @@ Method: GET
 URL: http://[::1]/fleetsu/index.php/api/telematics/devices
 
 Parameters
-	id integer Optional
+1. id integer Optional
 	
 If no parameters, it will return all the records
 
@@ -24,9 +24,9 @@ URL: http://[::1]/fleetsu/index.php/api/telematics/devices
 Method: POST
 
 Parameters
-	device_id string required
-	device_label string required
-	last_reported_date timestamp requirred (UTC) ex(2017-11-23 03:14:07)
+1. device_id string required
+2. device_label string required
+3. last_reported_date timestamp requirred (UTC) ex(2017-11-23 03:14:07)
 
 
 *******************
