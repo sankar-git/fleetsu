@@ -4,7 +4,7 @@
 FRONT END URL and Add new devices Interface
 http://[::1]/fleetsu/index.php/rest-server
 
-Please check the database configuration in the application\config\database.php.
+Please check the database configuration in the application/config/database.php.
 
 Please import the SQL file telematics.sql.
 
