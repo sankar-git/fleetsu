@@ -17,7 +17,7 @@ If no parameters, it will return all the records
 To Add New Devices
 URL: http://[::1]/fleetsu/index.php/api/telematics/devices
 Method: POST
-Parameters:rin
+Parameters
 	device_id string requirred
 	device_label string requirred
 	last_reported_date timestamp requirred (UTC) ex(2017-11-23 03:14:07)
