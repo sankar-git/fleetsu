@@ -2,7 +2,7 @@
  REST Service and Simple Frontend
 ###################
 FRONT END URL and Add new devices Interface
-http://[::1]/fleetsu/index.php/api/telematics/devices
+http://[::1]/fleetsu/index.php/rest-server
 
 *******************
 TO GET Device(s)
