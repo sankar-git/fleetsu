@@ -1,0 +1,59 @@
+body {
+    background-color: #FFF;
+    margin: 40px;
+    font: 16px/20px normal Helvetica, Arial, sans-serif;
+    color: #4F5155;
+    word-wrap: break-word;
+}
+.table {
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+}
+.row {
+    display: table-row;
+    background: #f6f6f6;
+}
+.cell {
+    padding: 6px 12px;
+    display: table-cell;
+}
+.row:nth-of-type(odd) {
+    background: #e9e9e9;
+}
+.row.header {
+     font-weight: 900;
+     color: #ffffff;
+     background: #ea6153;
+ }
+.row.blue {
+    background: #2980b9;
+}
+.green{
+    color: #008000;
+    font-weight: bold;
+}
+.red{
+    color: #ff0000;
+    font-weight: bold;
+}
+fieldset {
+    margin: 1.5em 0 0 0;
+    padding: 0;
+}
+legend {
+    margin-left: 1em;
+    color: #000000;
+    font-weight: bold;
+}
+fieldset ol {
+    padding: 1em 1em 0 1em;
+    list-style: none;
+}
+fieldset li {
+    padding-bottom: 1em;
+}
+fieldset.submit {
+    border-style: none;
+}
