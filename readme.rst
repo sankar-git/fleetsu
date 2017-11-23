@@ -4,22 +4,28 @@
 FRONT END URL and Add new devices Interface
 http://[::1]/fleetsu/index.php/api/telematics/devices
 
-END Points:
+*******************
 TO GET Device(s)
+*******************
 Method: GET
+
 URL: http://[::1]/fleetsu/index.php/api/telematics/devices
 
 Parameters
 	id integer Optional
 	
 If no parameters, it will return all the records
-	
-To Add New Devices
+
+*******************
+To Add New Devices:
+*******************
 URL: http://[::1]/fleetsu/index.php/api/telematics/devices
+
 Method: POST
+
 Parameters
-	device_id string requirred
-	device_label string requirred
+	device_id string required
+	device_label string required
 	last_reported_date timestamp requirred (UTC) ex(2017-11-23 03:14:07)
 
 
