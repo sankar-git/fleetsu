@@ -40,11 +40,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
 <script>
+    var site_url = "<?php echo base_url();?>";
     function loaddata(){
         $('.rowdata').remove();
         $('#error_msg').html('');
         $.ajax({
-            url:'<?php echo site_url('api/telematics/devices');?>',
+            url:site_url+'api/telematics/devices',
             type: "GET",
             data: "",
             dataType: "json",
@@ -66,18 +67,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     }
 	$(document).ready(function(){
 	    $('#frmDevice').submit(function(){
-            $.ajax({
-                url:'<?php echo site_url('api/telematics/devices');?>',
-                type: "POST",
-                data: $('#frmDevice').serialize(),
-                dataType: "json",
-                success: function(data){
-                    $('#error_msg').html(data.message);
-                    loaddata();
-                }
-            });
-	        return false;
-		});
+	        if($('#device_id').val()!='' && $('#device_label').val() && $('#last_reported_date').val()){
+                $.ajax({
+                    url:site_url+'api/telematics/devices',
+                    type: "POST",
+                    data: $('#frmDevice').serialize(),
+                    dataType: "json",
+                    success: function(data){
+                        $('#device_id').val('');
+                        $('#device_label').val('');
+                        $('#last_reported_date').val('');
+                        $('#error_msg').html(data.message);
+                        loaddata();
+                    }
+                });
+            }else{
+	            alert('Please enter all the fields');
+            }
+            return false;
+        });
+
 	    loaddata();
 	});
 
