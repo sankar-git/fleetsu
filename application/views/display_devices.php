@@ -43,7 +43,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     var site_url = "<?php echo base_url();?>";
     function loaddata(){
         $('.rowdata').remove();
-        $('#error_msg').html('');
         $.ajax({
             url:site_url+'api/telematics/devices',
             type: "GET",
