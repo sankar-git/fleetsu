@@ -6,6 +6,8 @@ http://[::1]/fleetsu/index.php/rest-server
 
 Please check the database configuration in the application/config/database.php.
 
+Also Please check the base_url in the application/config/config.php.
+
 Please import the SQL file telematics.sql.
 
 *******************
